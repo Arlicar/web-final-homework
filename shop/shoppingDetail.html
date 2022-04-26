@@ -1,0 +1,406 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>漫步时尚广场-商品详情</title>
+  <link href="css/detail.css" rel="stylesheet" type="text/css">
+  <link href="css/show.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript" src="js/shoppingCart.js"></script>
+  <script type="text/javascript" src="js/hotAdvise.js"></script>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <!--解决部分浏览器对HTML5不支持-->
+  <!--[if IE]>
+<script>
+document.createElement("header");
+document.createElement("footer");
+document.createElement("nav");
+document.createElement("article");
+document.createElement("section");
+</script>
+<![endif]-->
+  <script type="text/javascript" src="js/goodsOperator.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script type="text/javascript" src="js/pictureSlide.js"></script>
+  <script type="text/javascript" src="js/jquery-1.x.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!--顶部区域 start-->
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="top_line">
+    <tr>
+      <td bgcolor="#f7f7f7">
+        <table width="1200" border="0" cellspacing="0" cellpadding="0" align="center">
+          <tr>
+            <td class="padding-top"><img src="images/star.jpg">收藏 | HI，欢迎来订购 ！</td>
+            <td align="right"> 客户服务<img src="images/arrow.gif">&nbsp;网站导航<img src="images/arrow.gif">&nbsp;<span
+                class="droparrow"><span class="shopcart"></span>我的购物车<span class="orange">0</span>件<img
+                  src="images/arrow.gif" /></span></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <!--顶部区域 end-->
+  <div class="clear"></div>
+
+  <!--菜单导航栏 start-->
+  <div class="bg-danger">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ce2626">
+      <tr>
+        <td>
+          <table width="1200" border="0" cellspacing="0" cellpadding="4" align="center" class="nav_font16">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td width="80" align="center"><a href="shoppingIndex.html" class="white">首页</a>
+              </td>
+              <td width="100" class="nav_active" align="center"><a href="shoppingShow.html" class="white">最新上架</a></td>
+              <td width="100" align="center">品牌活动</td>
+              <td width="100" align="center">原厂直供</td>
+              <td width="80" align="center">团购</td>
+              <td width="100" align="center">限时抢购</td>
+              <td width="100" align="center">促销打折</td>
+              <td width="100" align="center"><a class="white" href="hometownCulture.html">家乡文化</a></td>
+              <td width="100" align="center"><a class="white" href="resume.html">个人简历</a></td>
+              <td width="200" align="center">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!--中间部分 start-->
+  <section>
+    <div class="main">
+      <nav>
+        <ul class="menu">
+          <li><span class="title">女装</span></li>
+          <li><span class="red_dot"></span><a href="#">上衣</a><span class="right_arrow"></span></li>
+          <li><span class="red_dot"></span><a href="#">下装</a><span class="right_arrow"></span></li>
+          <li><span class="red_dot"></span><a href="#">连衣裙</a><span class="right_arrow"></span></li>
+          <li><span class="red_dot"></span><a href="#">内衣</a><span class="right_arrow"></span></li>
+          <li><span class="title">男装</span></li>
+          <li><span class="red_dot"></span><a href="#">T恤</a><span class="right_arrow"></span></li>
+          <li><span class="red_dot"></span><a href="#">短裤</a><span class="right_arrow"></span></li>
+          <li><span class="red_dot"></span><a href="#">衬衫</a><span class="right_arrow"></span></li>
+          <li><span class="title">童装</span></li>
+          <li><span class="red_dot"></span><a href="#">上衣</a><span class="right_arrow"></span></li>
+          <li><span class="red_dot"></span><a href="#">裤子</a><span class="right_arrow"></span></li>
+          <li><span class="title">运动</span></li>
+          <li><span class="red_dot"></span><a href="#">运动裤</a><span class="right_arrow"></span></li>
+          <li><span class="red_dot"></span><a href="#">跑步鞋</a><span class="right_arrow"></span></li>
+        </ul>
+      </nav>
+      <!--购物分类end-->
+      <!--中间区 start-->
+      <div class="middle">
+        <h1 class="pic_title">商品详情</h1>
+        <div class="left_pic">
+          <div id="box">
+            <img src="images/showdetail/dd1.jpg" width="400" height="400" id="showGoodsPicture">
+            <div id="shade"></div>
+          </div>
+          <ul class="small_piclist" id="goodsList">
+            <li><img src="images/showdetail/dd1.jpg" onclick="changeGoodsImage(this)"></li>
+            <li><img src="images/showdetail/dd2.jpg" onclick="changeGoodsImage(this)"></li>
+            <li><img src="images/showdetail/dd3.jpg" onclick="changeGoodsImage(this)"></li>
+            <li><img src="images/showdetail/dd4.jpg" onclick="changeGoodsImage(this)"></li>
+            <li><img src="images/showdetail/dd5.jpg" onclick="changeGoodsImage(this)"></li>
+          </ul>
+          <!--canvas不能通过样式设置大小，只能通过属性设置-->
+          <canvas id="canvas" width="400px" height="400px"></canvas>
+        </div>
+        <div class="right">
+          <h1 class="font16">冬季新款牛仔外套女中长款加厚<br />
+            女冬装连帽毛领加绒牛仔棉衣女风衣</h1>
+          <img src="images/showdetail/pic_mess.jpg">
+        </div>
+        <div class="clear"></div>
+        <ul class="tab" id="goodsTabs">
+          <li class="tab_active" onClick="changeGoodsInfo(this)">商品详情</li>
+          <li onClick="changeGoodsInfo(this)">商品评价</li>
+          <li onClick="changeGoodsInfo(this)">成交记录</li>
+        </ul>
+        <article class="tab_content1">
+          <ul class="particulars">
+            <li title=" 修身">服装版型: 修身</li>
+            <li title=" 甜美">风格: 甜美</li>
+            <li title=" 瑞丽">甜美: 瑞丽</li>
+            <li title=" 中长款">衣长: 中长款</li>
+            <li title=" 长袖">袖长:长袖</li>
+            <li title=" 常规">袖型: 常规</li>
+            <li title=" 带帽">领型:带帽</li>
+            <li title=" 拉链">衣门襟:拉链</li>
+            <li title=" 纯色">图案: 纯色</li>
+            <li title=" 81%(含)-90%(含)">成分含量:81%(含)-90%(含)</li>
+            <li title=" 棉">质地: 棉</li>
+            <li title=" 25-29周岁">适用年龄: 25-29周岁</li>
+            <li title=" 2015年冬季">年份季节:2015年冬季</li>
+            <li title=" 深蓝色 蓝色">颜色分类: 深蓝色 蓝色</li>
+            <li title=" M L XL 2XL">尺码:M L XL 2XL</li>
+          </ul>
+          <section> <img src="images/showdetail/detail1.jpg"> <img src="images/showdetail/detail2.jpg"> <img
+              src="images/showdetail/detail3.jpg" class="img_border"> <img src="images/showdetail/detail4.jpg"
+              class="img_border"> <img src="images/showdetail/detail5.jpg" class="img_border"><img
+              src="images/showdetail/detail6.jpg" class="img_border"></section>
+        </article>
+        <article class="tab_content2 none"><img src="images/showdetail/pinglun.jpg" /></article>
+        <article class="tab_content3 none">
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <thead>
+              <tr>
+                <th>买家</th>
+                <th>淘宝价</th>
+                <th>数量</th>
+                <th>付款时间</th>
+                <th>款式和型号</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> a**男 (匿名) </td>
+                <td><em class="price2">¥198.00</em></td>
+                <td>1</td>
+                <td> 2015-07-31 20:08:39 </td>
+                <td>
+                  <div>
+                    <p>颜色分类:深蓝色[胸前格纹]</p>
+                    <p>尺码:L</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td> 闺**你 (匿名) </td>
+                <td><em class="price2">¥198.00</em></td>
+                <td>1</td>
+                <td> 2015-07-27 14:05:17 </td>
+                <td>
+                  <div>
+                    <p>颜色分类:蓝色[口袋格纹]</p>
+                    <p>尺码:L</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td> w**0 (匿名)</td>
+                <td><em class="price2">¥198.00</em></td>
+                <td>1</td>
+                <td> 2015-07-23 12:33:54 </td>
+                <td>
+                  <div>
+                    <p>颜色分类:深蓝色[胸前格纹]</p>
+                    <p>尺码:L</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td> a**u (匿名)</td>
+                <td><em class="price2">¥198.00</em></td>
+                <td>1</td>
+                <td> 2015-07-23 12:04:19 </td>
+                <td>
+                  <div>
+                    <p>颜色分类:蓝色[口袋格纹]</p>
+                    <p>尺码:L</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td> 落**1 (匿名) </td>
+                <td><em class="price2">¥198.00</em></td>
+                <td>1</td>
+                <td> 2015-07-22 21:39:27 </td>
+                <td>
+                  <div>
+                    <p>颜色分类:深蓝色[胸前格纹]</p>
+                    <p>尺码:L</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td> 6**s (匿名) </td>
+                <td><em class="price2">¥198.00</em></td>
+                <td>1</td>
+                <td> 2015-07-12 15:00:30 </td>
+                <td>
+                  <div>
+                    <p>颜色分类:蓝色[口袋格纹]</p>
+                    <p>尺码:L</p>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <!--品牌活动-->
+        <article>
+          <h1 class="pic_title">看了又看</h1>
+          <ul class="pic_list4">
+            <li><img src="images/showdetail/ss1.jpg" title="2015新款条纹显瘦V领短袖露背宽松连身裤" />
+              <p>2015新款条纹显瘦V领短袖露背宽松连身裤</p>
+            </li>
+            <li><img src="images/showdetail/ss2.jpg" title="2015女士新款百搭休闲阔腿裤高腰红色短裤" />
+              <p>2015女士新款百搭休闲阔腿裤高腰红色短裤</p>
+            </li>
+            <li><img src="images/showdetail/ss3.jpg" title="女版街头个性休闲口袋纯色卫衣吊带哈伦裤" />
+              <p>女版街头个性休闲口袋纯色卫衣吊带哈伦裤</p>
+            </li>
+            <li><img src="images/showdetail/ss4.jpg" title="韩版简约百搭五分袖喇叭袖圆领打底短袖" />
+              <p>韩版简约百搭五分袖喇叭袖圆领打底短袖</p>
+            </li>
+            <li><img src="images/showdetail/ss5.jpg" title="卡玛娅秋装新款女装 圆领纯棉上衣棉T恤" />
+              <p>卡玛娅秋装新款女装 圆领纯棉上衣棉T恤</p>
+            </li>
+          </ul>
+          <article>
+      </div>
+      <!--中间区 end-->
+      <!--右侧热门推荐 start-->
+      <aside class="right_nav">
+        <h1 class="notice_title"> 热门推荐 </h1>
+        <ul class="pic_list3">
+          <ul>
+            <li><a href="#"><img src="images/shopshow/s1.jpg" /></a>
+              <p class="price2">￥56.00元</p>
+            </li>
+            <li><a href="#"><img src="images/shopshow/s2.jpg" /></a>
+              <p class="price2">￥97.00元</p>
+            </li>
+            <li><a href="#"><img src="images/shopshow/s3.jpg" /></a>
+              <p class="price2">￥89.00元</p>
+            </li>
+            <li><a href="#"><img src="images/shopshow/s4.jpg" /></a>
+              <p class="price2">￥69.00元</p>
+            </li>
+            <li><a href="#"><img src="images/shopshow/s5.jpg" /></a>
+              <p class="price2">￥89.00元</p>
+            </li>
+            <li><a href="#"><img src="images/shopshow/s6.jpg" /></a>
+              <p class="price2">￥93.00元</p>
+            </li>
+            <li><a href="#"><img src="images/shopshow/s7.jpg" /></a>
+              <p class="price2">￥58.00元</p>
+            </li>
+            <li><a href="#"><img src="images/shopshow/s8.jpg" /></a>
+              <p class="price2">￥69.00元</p>
+            </li>
+            <li><a href="#"><img src="images/shopshow/s9.jpg" /></a>
+              <p class="price2">￥78.00元</p>
+            </li>
+          </ul>
+        </ul>
+      </aside>
+    </div>
+  </section>
+  <!--右侧热门推荐 end-->
+  <!--中间部分 end-->
+  <footer>
+    <div class="clear"></div>
+    <div class="foot">
+      <div class="foot_title">
+        <ul class="foot_pic">
+          <li><img src="images/gray1.jpg"></li>
+          <li><img src="images/gray2.jpg"></li>
+          <li><img src="images/gray3.jpg"></li>
+          <li><img src="images/gray4.jpg"></li>
+          <li><img src="images/gray5.jpg"></li>
+        </ul>
+      </div>
+      <ul class="foot_list">
+        <li>
+          <div class="floatl">
+            <p class="red1"></p>
+            <p class="line1"></p>
+          </div>
+          <ul class="floatl">
+            <li class="font16 padding-bottom">新手指导</li>
+            <li>用户注册</li>
+            <li>电话下单</li>
+            <li>购物流程</li>
+            <li>购物保障</li>
+            <li>服务协议</li>
+          </ul>
+        </li>
+        <li>
+          <div class="floatl">
+            <p class="red2"></p>
+            <p class="line1"></p>
+          </div>
+          <ul class="floatl">
+            <li class="font16 padding-bottom">支付方式</li>
+            <li>货到付款</li>
+            <li>商城卡支付</li>
+            <li>支付宝、网银支付</li>
+            <li>优惠券抵用</li>
+          </ul>
+        </li>
+        <li>
+          <div class="floatl">
+            <p class="red3"></p>
+            <p class="line1"></p>
+          </div>
+          <ul class="floatl">
+            <li class="font16 padding-bottom">配送方式</li>
+            <li>闪电发货</li>
+            <li>满百包邮</li>
+            <li>配送范围及时间</li>
+            <li>商品验收及签收</li>
+            <li>服务协议</li>
+          </ul>
+        </li>
+        <li>
+          <div class="floatl">
+            <p class="red3"></p>
+            <p class="line1"></p>
+          </div>
+          <ul class="floatl">
+            <li class="font16 padding-bottom">售后服务</li>
+            <li>退换货协议</li>
+            <li>关于发票</li>
+            <li>退换货流程</li>
+            <li>退换货运费</li>
+          </ul>
+        </li>
+        <li>
+          <div class="floatl">
+            <p class="red3"></p>
+            <p class="line1"></p>
+          </div>
+          <ul class="floatl">
+            <li class="font16 padding-bottom">关于帐号</li>
+            <li>修改个人信息</li>
+            <li>修改密码</li>
+            <li>找回密码</li>
+          </ul>
+        </li>
+        <li>
+          <div class="floatl">
+            <p class="red3"></p>
+            <p class="line1"></p>
+          </div>
+          <ul class="floatl">
+            <li class="font16 padding-bottom">优惠活动</li>
+            <li>竞拍须知</li>
+            <li>抢购须知</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="clear"></div>
+      <div class="foot_line"></div>
+      <p align="center" class="padding-top">陈亦杭 2000303102 198168xxxx9 164880xxx0@qq.com<br />
+        Copyright 2015-2020 Q- Walking Fashion E&S 漫步时尚广场（QST教育）版权所有<Br />
+        中国青岛 高新区河东路8888号 青软教育集团 咨询热线：400-658-0166 400-658-1022 </p>
+      <p align="center"><img src="images/foot_pic.jpg"></p>
+      <div class="clear"></div>
+    </div>
+  </footer>
+  </article>
+</body>
+
+</html>

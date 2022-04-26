@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* CSS Document */
+body{font-size:12px;font-family:microsoft yahei;margin:0;color:#000}
+li,ul{list-style:none}
+a{color:#000;text-decoration:none}
+a:hover{color:#ce2626;text-decoration:none}
+img{border:none}
+.font16{font-size:16px;font-weight:700}
+.clear{clear:both}
+.floatl{float:left}
+.floatr{float:right}
+.main{margin:10px auto;width:1200px}
+/*头部*/
+.top_bg{border-collapse: collapse;
+font-size: 12px;
+font-family: "宋体";
+line-height: 30px;}
+.top_content{width:1200px;margin:0 auto}
+.logo{margin:5px auto;width:1200px}
+.nav_bg{background:#ce2626;width:100%;color:#fff}
+.nav_content{width:1200px;margin:0 auto;height:40px;line-height:40px}
+.nav{width:700px;float:left;margin-left:200px}
+.nav li{font-size:16px;font-weight:700;color:#fff;width:80px;float:left;text-align:center;margin-right:15px}
+.orange{font-weight:700;color:#f60}
+.nav_active{background:#b12121}
+a.white{color:#fff;text-decoration:none}
+a.white:hover{color:#ff0;text-decoration:none}
+
+/*下接菜单*/
+.xl{display:inline-block;position:relative}
+/*修改width：120px->130px */
+.droparrow{position:relative;border:1px solid transparent;width:130px;height:30px;display:inline-block;padding-left:5px;z-index:1000}
+/*去购物车的掉hover效果*
+/*.droparrow:hover{background:#fff;width:120px;height:30px;display:inline-block;border:1px solid #ccc;border-bottom:none;padding-left:5px;cursor:pointer}*/
+.xl>.dropdown{background:#fff;width:285px;height:225px;border:1px solid #ccc;padding:5px;position:absolute;right:0;top:30px;z-index:999;overflow-y:auto;overflow-x:hidden;display:none}
+/*去购物车的掉hover效果*/
+/*.xl:hover>.dropdown{display:block}*/
+
+.shop_pic li{float:left;margin:0 3px;line-height:20px}
+.shop_pic li p{text-align:center;color:gray}
+.shop_pic img{border:1px solid #ccc}
+.shop_pic img:hover{border:1px solid #f60}
+.shopcart{background:url(../images/shoppingcart.png) no-repeat;width:16px;height:16px;display:inline-block;float:left;margin:5px 5px 0 0}
+/*左侧导航*/
+.right_arrow{background:url(../images/arrow_r.jpg) no-repeat;width:20px;height:20px;display:inline-block;float:right}
+.menu{width:220px;float:left;border:1px solid #e5e4e1 mediumpurple padding:0;padding: 0;margin: 0}
+.menu li{float:left;width:220px;border-bottom:1px solid #e5e4e1;height:33px;line-height:33px;background:#fafafa;font-size:14px;text-align:left}
+.menu li .title{height:33px;background:#e5e4e1;font-size:15px;text-indent:20px;text-align:left;width:220px;line-height:33px;display:inline-block}
+.red_dot{font-size:25px;margin-right:10px;background:url(../images/red_dot.gif) no-repeat;width:8px;height:8px;display:inline-block;margin-left:10px}
+/*中间部分*/
+.middle{float:left;width:690px;margin: 0;padding: 0}
+.pic_list{float:left}
+.pic_list dl{float:left;width:152px;margin:0 10px 10px}
+.price{font-size:15px;font-weight:700;color:red;float:left}
+.price2{font-size:12px;font-weight:700;color:red;text-align:center}
+.font12{font-size:12px;color:#ccc;float:right}
+.pic_list dl img{padding:5px;border:1px solid #ccc;margin-bottom:10px}
+.pic_list dl dd{float:left}
+.pic_title{background:#ff9c01;line-height:40px;font-size:16px;text-indent:20px;text-align:left;width:680px;float:left;color:#fff;margin:0 10px 10px}
+.pic_list2 li{float:left}
+.pic_list2{margin:0 6px 0 12px}
+.pic_list2 li{width:160px;float:left;margin:5px 4px}
+/*右侧公告*/
+.right_nav{width:280px;border:1px solid #eee;float:right;padding:0;margin:0}
+.notice_title{background:#eee;line-height:40px;font-size:16px;text-indent:20px;text-align:left}
+/*foot*/
+.footer{width:100%;background:#efefef;height:310px;margin-top:15px}
+.foot_title{background:#6a6665;width:100%;height:40px;padding-top:8px}
+.foot_pic{margin:0 auto;width:1200px}
+.foot_pic li{width:210px;float:left;text-align:center}
+.padding-bottom{padding-bottom:10px}
+.padding-top{padding-top:10px}
+.foot_line{border-bottom:1px solid #ccc;font-size:12px;margin-top:10px}
+.line1{background:url(../images/line1.jpg) no-repeat;width:20px;height:100px;display:inline-block}
+.red1{background:url(../images/red1.jpg) no-repeat;width:35px;height:31px;display:block}
+.red2{background:url(../images/red2.jpg) no-repeat;width:35px;height:31px;display:block}
+.red3{background:url(../images/red3.jpg) no-repeat;width:35px;height:31px;display:block}
+.foot_list>li{float:left;width:170px}
+.foot_list{width:1100px;margin:0 auto;padding-top:20px}
+.foot_list li ul{padding-left:10px}
+
+.pic_list3 li{margin:5px;float:left;width:83px}
+.pic_list3 li img{border:1px solid #ccc}
+.gotop{background:url(../images/shopshow/gotop.jpg) no-repeat;width:60px;height:60px;position:fixed;bottom:20px;right:0}

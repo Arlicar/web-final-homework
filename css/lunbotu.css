@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.content {
+    position: relative;
+    width: 800px;
+    height: 450px;
+    overflow: hidden;
+    border: 1px solid #fff;
+    margin: 30px auto;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, .5);
+    animation: lunbotuShow 5s;
+}
+
+.content img {
+    width: 800px;
+    height: 450px;
+}
+
+.arrow {
+    position: absolute;
+    top: 192px;
+    width: 30px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, .3);
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    display: none;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.left {
+    left: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 2;
+}
+
+.right {
+    right: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    z-index: 2;
+}
+
+.content ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    z-index: 1;
+}
+
+.content ul li {
+    float: left;
+}
+
+.content ol {
+    position: absolute;
+    bottom: 10px;
+    left: 350px;
+    width: 90px;
+    height: 14px;
+    background-color: rgba(255, 255, 255, .7);
+    border-radius: 7px;
+    z-index: 2;
+}
+
+.content ol li {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    float: left;
+    margin: 1px 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.content ol .current {
+    background-color: #333333;
+}
+/* 
+@-webkit-keyframes lunbotuShow {
+    0% {
+        margin-top: 800px;
+    }
+
+    20% {
+        margin-top: 800px;
+    }
+
+    40% {
+        margin-top: 800px;
+    }
+
+    60% {
+        margin-top: 800px;
+    }
+
+    64% {
+        margin-top: 30px;
+    }
+
+    68% {
+        margin-top: 80px;
+    }
+
+    72% {
+        margin-top: 30px;
+    }
+
+    76% {
+        margin-top: 40px;
+    }
+
+    80% {
+        margin-top: 30px;
+    }
+
+    100% {
+        margin-top: 30px;
+    }
+}
+
+@keyframes lunbotuShow {
+    0% {
+        margin-top: 800px;
+    }
+
+    20% {
+        margin-top: 800px;
+    }
+
+    40% {
+        margin-top: 800px;
+    }
+
+    60% {
+        margin-top: 800px;
+    }
+
+    64% {
+        margin-top: 30px;
+    }
+
+    68% {
+        margin-top: 80px;
+    }
+
+    72% {
+        margin-top: 30px;
+    }
+
+    76% {
+        margin-top: 40px;
+    }
+
+    80% {
+        margin-top: 30px;
+    }
+
+    100% {
+        margin-top: 30px;
+    }
+} */

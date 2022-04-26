@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的简历</title>
+    <link rel="stylesheet" href="./css/resume.css">
+    <link rel="stylesheet" href="./css/clock.css">
+    <script src="./js/clock.js"></script>
+</head>
+<style>
+    #menu {
+        margin-top: 20px;
+    }
+
+    #menu li {
+        float: left;
+        margin: 0 25px;
+        width: 150px;
+        height: 40px;
+        font-size: 25px;
+        text-align: center;
+        line-height: 40px;
+        cursor: pointer;
+        font-weight: 600;
+        border-radius: 50px;
+        background: linear-gradient(145deg, #f0f0f0, #cacaca);
+        box-shadow: 5px 5px 10px #bebebe,
+            -5px -5px 10px #ffffff;
+        color: #6b6969;
+        text-shadow: 2px 2px 2px #ffffff,
+            -2px -2px 2px #b1b1b1;
+        transition: box-shadow, text-shadow 0.3s ease-in-out;
+    }
+
+    #menu li:hover {
+        border-radius: 50px;
+        background: linear-gradient(145deg, #cacaca, #f0f0f0);
+        box-shadow: 5px 5px 10px #bebebe,
+            -5px -5px 10px #ffffff;
+        text-shadow: 2px 2px 2px #b1b1b1,
+            -2px -2px 2px #ffffff;
+    }
+</style>
+
+<body>
+    <a href="./index.html" class="back">返回首页</a>
+    <div class="content">
+        <div class="topImg">
+            <div class="clock">
+                <div class="circle">
+                    <ul class="scale">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul class="number">
+                        <li>12</li>
+                        <li>3</li>
+                        <li>6</li>
+                        <li>9</li>
+                    </ul>
+                </div>
+                <div class="hour"></div>
+                <div class="min"></div>
+                <div class="sec"></div>
+            </div>
+        </div>
+        <div class="wantDo-box">
+            <div class="wantDo">
+                <p class="text">
+                    求职意向:前端工程师
+                </p>
+                <p class="text">
+                    www.xcbhc.cn
+                </p>
+                <p class="text">
+                    姓名:陈亦杭
+                </p>
+                <p class="text">
+                    手机号:198168xxx79
+                </p>
+            </div>
+        </div>
+
+        <ul id="menu">
+            <li>教育经历</li>
+            <li>项目经历</li>
+            <li>技能证书</li>
+            <li>兴趣爱好</li>
+        </ul>
+        <div class="education">
+            <p class="title">教育经历</p>
+            <p class="hr">==============================================</p>
+            <p class="text1">2008~2014</p>
+            <p class="text1">钱库第一小学</p>
+            <p class="text1">2008级二班&nbsp;&nbsp;&nbsp;</p>
+            <p class="text1">学习委员</p>
+            <p class="text1">2015~2017</p>
+            <p class="text1">钱库第一中学</p>
+            <p class="text1">2015级7班12号</p>
+            <p class="text1">副班长</p>
+            <p class="text1">2018~2020</p>
+            <p class="text1">苍南嘉禾中学</p>
+            <p class="text1">选科:物理生物技术</p>
+            <p class="text1">普高</p>
+            <p class="text1">2020~2024</p>
+            <p class="text1">中国计量大学</p>
+            <p class="text1">计算机科学与技术&nbsp;</p>
+            <p class="text1">本科</p>
+        </div>
+        <div class="project">
+            <p class="title">项目经历</p>
+            <p class="hr">==============================================</p>
+            <p class="text2">2020</p>
+            <p class="text2">B站自学&nbsp;&nbsp;&nbsp;</p>
+            <p class="text2">前端三件&nbsp;&nbsp;&nbsp;</p>
+            <p class="text2">商城页面</p>
+            <p class="text2">2021</p>
+            <p class="text2">B站自学&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p class="text2">vue&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p class="text2">后台管理系统</p>
+            <p class="text2">2021</p>
+            <p class="text2">实验室项目</p>
+            <p class="text2">vue&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p class="text2">B2B后台页面</p>
+            <p class="text2">2021</p>
+            <p class="text2">实验室项目</p>
+            <p class="text2">vue&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p class="text2">勘察车辆系统</p>
+        </div>
+        <div class="ability">
+            <p class="title">技能证书</p>
+            <p class="hr">==============================================</p>
+            <p class="text3">.大学英语四级</p>
+            <p class="text3">.大学英语六级</p>
+            <p class="text3">.计算机一级证书</p>
+            <p class="text3">.本科毕业证</p>
+        </div>
+        <div class="hobby">
+            <p class="title">兴趣爱好</p>
+            <p class="hr">==============================================</p>
+            <p class="text3">.绘画,板画</p>
+            <p class="text3">.乒乓球</p>
+            <p class="text3">.唱歌,游戏</p>
+            <p class="text3">.当然前端也是我的爱好</p>
+        </div>
+    </div>
+    <script>
+        const lis = document.querySelector('#menu').querySelectorAll('li')
+        const education = document.querySelector('.education')
+        const project = document.querySelector('.project')
+        const ability = document.querySelector('.ability')
+        const hobby = document.querySelector('.hobby')
+        for (let i = 0; i < lis.length; i++) {
+            lis[i].addEventListener('click', function () {
+                if (i === 0) {
+                    education.style.display = 'block'
+                    project.style.display = 'none'
+                    ability.style.display = 'none'
+                    hobby.style.display = 'none'
+                } else if (i === 1) {
+                    education.style.display = 'none'
+                    project.style.display = 'block'
+                    ability.style.display = 'none'
+                    hobby.style.display = 'none'
+                } else if (i === 2) {
+                    education.style.display = 'none'
+                    project.style.display = 'none'
+                    ability.style.display = 'block'
+                    hobby.style.display = 'none'
+                } else {
+                    education.style.display = 'none'
+                    project.style.display = 'none'
+                    ability.style.display = 'none'
+                    hobby.style.display = 'block'
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>

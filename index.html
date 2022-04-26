@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jQuery.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/windowRoll.js"></script>
+    <script src="./js/logoFollow.js"></script>
+    <!-- 下雪插件 -->
+    <script src="./dist/js/index/snow.js"></script>
+    <script>
+        createSnow('', 200);
+    </script>
+    <!-- ---- -->
+    <!-- 看板娘插件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./dist/css/waifu.css">
+    <!-- ---- -->
+    <link rel="stylesheet" href="./favicon.ico">
+</head>
+<style>
+    /* 看板娘样式 */
+    #github svg {
+        transition: all 1s;
+        fill: #222;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: 0;
+        width: 80px;
+        height: 80px;
+    }
+
+    #github:hover svg {
+        width: 160px;
+        height: 160px;
+    }
+
+    /* ---- */
+</style>
+
+<body id="introduction">
+    <!--! 顶部导航区 -->
+    <ul class="daohang">
+        <li class="first">
+            <a href="./index.html">首页</a>
+        </li>
+        <li>
+            <a href="javascript:;">关于我</a>
+            <ul>
+                <a href="./introduce.html">
+                    <li>自我介绍</li>
+                </a>
+                <a href="./resume.html">
+                    <li>我的简历</li>
+                </a>
+            </ul>
+        </li>
+        <li>
+            <a href="javascript:;">我的家乡</a>
+            <ul>
+                <a href="./foods.html">
+                    <li>温州美食</li>
+                </a>
+                <a href="./scene/index.html">
+                    <li>温州美景</li>
+                </a>
+                <a href="./humanity/index.html">
+                    <li>温州人文</li>
+                </a>
+            </ul>
+        </li>
+        <li>
+            <a href="./shop/shoppingIndex.html">时代广场</a>
+        </li>
+        <li>
+            <a href="http://49.235.125.211/">我的博客</a>
+        </li>
+        <li>
+            <a href="javascript:;" id="closeLogo">关闭图片跟随</a>
+        </li>
+    </ul>
+
+    <!--! 顶部图片区 -->
+    <div class="head">
+        <img src="./img/schoolLogo.png" class="schoolLogo">
+        <P class="headText1">
+            欢迎来到 (๑O-O)و✧
+            <br>
+            陈亦杭 的WEB大作业
+        </P>
+        <p class="headText4">课程:web前端开发</p>
+        <p class="headText2">班级:20计算机一班</p>
+        <p class="headText3">学号:2000303102</p>
+        <p class="headText5"><em>中国计量大学</em></p>
+    </div>
+
+    <!--! 跟踪鼠标的图片 -->
+    <img src="./img/followImg.gif" class="Follow">
+
+    <!--! 返回顶部图标 -->
+    <div class="returnTop"></div>
+
+
+    <div class="box">
+        <!--!左侧内容主题区 -->
+        <div class="left">
+            <div class="contentBox">
+                <div class="content content1">
+                </div>
+                <div class="content content2">
+                </div>
+                <div class="content content3">
+                </div>
+                <div class="content content4">
+                </div>
+                <div class="content content5">
+                </div>
+                <div class="content content6">
+                </div>
+                <div class="content content7">
+                </div>
+                <div class="content content7">
+                </div>
+                <div class="content content7">
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <!-- !右侧导航区 -->
+            <div class="introduce">
+                <div class="introduce-top">
+                    <div class="introduce-top-top"></div>
+                    <div class="introduce-top-bottom"></div>
+                    <a href="./introduce.html">
+                        <div class="introduce-top-img"></div>
+                    </a>
+                    <p class="introduce-top-text">点击头像进入自我介绍</p>
+                </div>
+                <div class="introduce-bottom">
+                    <ul>
+                        <a href="./index.html">
+                            <li>首页( 。ớ ₃ờ)</li>
+                        </a>
+                        <a href="./resume.html">
+                            <li>我的简历（๑ `▽´๑）</li>
+                        </a>
+                        <a href="./scene/index.html">
+                            <li>我的家乡₍ ᐢ.⌄.ᐢ ₎</li>
+                        </a>
+                        <a href="./shop/shoppingIndex.html">
+                            <li>时代广场( ु•⌄• )◞</li>
+                        </a>
+                        <a href="http://49.235.125.211/">
+                            <li>我的博客♪(^∇^*)</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底栏 -->
+    <div class="footer">
+        <div class="wive"></div>
+        <a href="https://space.bilibili.com/698543247"><img src="./img/bilibili.png" alt="" class="bili"></a>
+        <p>联系方式:1648802850@qq.com 19816897379</p>
+    </div>
+
+    <!-- 音乐 -->
+    <div class="music">
+        <div class="left">
+            <img src="./mp3/1.jpg">
+            <audio controls autoplay="autoplay" loop="loop">
+                <source src="./mp3/DEPAPEPE - きっとまたいつか（album version）.mp3">
+                你的浏览器不支持audio元素
+            </audio>
+        </div>
+        <div class="right">
+            > </div>
+    </div>
+    <!-- 音乐播放器交互设置 -->
+    <script>
+        const music = document.querySelector('.music')
+        const music_text = document.querySelector('.music').querySelector('.right')
+        music.addEventListener('mouseenter', function () {
+            setTimeout(function () {
+                music_text.style.fontSize = '20px'
+                music_text.innerHTML = "祝你每天开心"
+            }, 500)
+
+        })
+        music.addEventListener('mouseleave', function () {
+            music_text.style.fontSize = '40px'
+            music_text.innerText = '>'
+        })
+    </script>
+    <script src="./dist/js/autoload.js">
+    </script>
+</body>
+
+</html>

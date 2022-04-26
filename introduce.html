@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自我介绍</title>
+    <script src="js/logoFollow.js"></script>
+    <script src="js/ImgCircle.js"></script>
+    <link rel="stylesheet" href="./css/introduce.css">
+</head>
+
+<body>
+    <div class="box">
+        <h2>非常<s>不</s>正经的自我介绍</h2>
+        <div class="box1">
+            <a href="./index.html"><img src="./img/touxiang.jpg" class="touxiang"></a>
+        </div>
+        <div class="message header">
+            <span>姓名：陈亦杭</span>
+            <br>
+            <span>班级：20计算机一班</span>
+            <br>
+            <span>学号：2000303102</span>
+            <br>
+            <span>学院：信息工程学院</span>
+            <img src="./img/vx.jpg" width="80px" height="80px" class="vx">
+        </div>
+        <ul>
+            <li class="message mainer first">
+                <span>
+                    <h3>兴趣爱好:</h3>
+                </span>
+                <br>
+                <span>乒乓球,二次元,板绘,游戏.....(<s>这个人爱好不多</s>)</span>
+                <br>
+                <span>
+                    <h3>#####:</h3>
+                </span>
+                <br>
+                <span>&#@#@!#$&*^%%$%$%@#@&……%……s&%%￥%#%&￥…%￥%……#￥%……#￥%#…￥%￥……%￥%￥%……￥（<s>说的好！</s>）</span>
+            </li>
+            <li class="message mainer second">
+                <span>
+                    <h3>自我评价：</h3>
+                </span>
+                <br>
+                <span>一个非常沙雕的人.....</span>
+                <br>
+                <span>
+                    <h1><em>沉默...</em></h1>
+                    <h3>多多关照！</h3>
+                </span>
+                <br><br><br>
+                <span>空空的总想写点啥.......<em style="color: #6e2a21;">点击头像返回首页</em></span>
+            </li>
+        </ul>
+        <img src="img/icon-auth.png" class="icon-auth">
+        <video width="320" height="240" autoplay loop muted>
+            <source src="img/footerVideo.mp4" type="video/mp4">
+            您的浏览器不支持Video标签。
+        </video>
+        <img src="img/fall.png" class="fall">
+    </div>
+
+    <div class="bigVx">
+        <img src="img/vx.jpg" width="280px" height="280px">
+    </div>
+    <img src="img/followImg.gif" class="Follow">
+    <script>
+        var bigVx = document.querySelector('.bigVx')
+        var vx = document.querySelector('.vx')
+        var touxiang = document.querySelector('.touxiang')
+        vx.addEventListener('mouseenter', function () {
+            bigVx.style.display = 'block'
+        })
+        touxiang.addEventListener('mouseenter', function () {
+            bigVx.style.display = 'block'
+        })
+        vx.addEventListener('mouseleave', function () {
+            bigVx.style.display = 'none'
+        })
+        touxiang.addEventListener('mouseleave', function () {
+            bigVx.style.display = 'none'
+        })
+    </script>
+</body>
+
+</html>

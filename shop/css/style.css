@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+body{font-size:12px;font-family:microsoft yahei;margin:0;color:#000}
+a{color:#000;text-decoration:none}
+a:hover{color:#ce2626;text-decoration:none}
+img{border:none}
+.font14{font-size:14px;font-weight:700}
+.font16{font-size:16px;font-weight:700}
+.padding-top{padding-top:8px}
+/*头部*/
+.top_line{border-bottom:1px solid #ccc;font-size:12px;font-family:"宋体";line-height:30px;}
+.nav_font16{font-size:16px;font-weight:700;color:#fff}
+.orange{font-weight:700;color:#f60}
+.nav_active{background:#b12121;padding:5px 0;height:30px}
+a.white{color:#fff;text-decoration:none}
+a.white:hover{color:#ff0;text-decoration:none}
+.shopcart{background:url(../images/shoppingcart.png) no-repeat center;width:16px;height:16px;display:inline-block}
+/*左侧导航*/
+.table1 tr th{height:33px;background:#e5e4e1;font-size:15px;text-indent:10px;text-align:left}
+.table1 tr td{height:33px;background:#fafafa;font-size:14px;text-indent:10px;text-align:left}
+.red_dot{font-size:25px;margin-right:10px;background:url(../images/red_dot.gif) no-repeat;width:8px;height:8px;display:inline-block}
+/*右侧公告*/
+.notice_title{font-size:16px;text-indent:20px;text-align:left}
+.gray_dot{color:#ccc;font-size:25px;margin-right:10px;background:url(../images/gray_dot.gif) no-repeat;width:8px;height:8px;display:inline-block}
+.notice_text{display:block;width:230px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;text-align:left}
+/*foot*/
+.foot_bg{line-height:20px;padding-top:10px;font-size:12px}
+.padding-bottom{padding-bottom:10px}
+.foot_line{border-bottom:1px solid #ccc;font-size:12px;margin-top:10px}

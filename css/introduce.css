@@ -1,0 +1,183 @@
+@font-face {
+    font-family: ziti;
+    src: url(../fonts/FZYouMaoZaiJ.TTF);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: ziti;
+}
+
+body {
+    background: url(../img/introduceImg.jpg);
+    background-size: 100%;
+    background-repeat: repeat;
+
+    /* 使背景图片固定不动 */
+    background-attachment: fixed;
+
+    /* 隐藏滚动条 */
+    scrollbar-width: none;
+    /* firefox */
+    -ms-overflow-style: none;
+    /* IE 10+ */
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* 隐藏谷歌浏览器的滚动条 */
+body::-webkit-scrollbar {
+    display: none;
+    /* Chrome Safari */
+}
+
+.box {
+    position: relative;
+    width: 600px;
+    height: 800px;
+    margin: 10px auto;
+    background-color: rgba(255, 255, 255, .5);
+    box-shadow: 10px 10px 10px 3px rgba(0, 0, 0, .5);
+    border-radius: 20px;
+    color: #2f2d31;
+    overflow: hidden;
+}
+
+h2 {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, .5);
+}
+
+.box .box1 {
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 2px solid #cdcdcd;
+}
+
+.box .box1:hover{
+    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, .5);
+}
+
+.box .box1 .touxiang {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+.box .message {
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgba(205, 205, 205, .5);
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, .5);
+}
+
+
+
+.header {
+    top: 70px;
+    right: 35px;
+    width: 300px;
+    height: 150px;
+}
+
+.message span {
+    display: block;
+    height: 10px;
+    margin-left: 20px;
+    margin-top: 5px;
+    color: #2f2d31;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.mainer {
+    width: 550px;
+    height: 200px;
+    left: 27px;
+}
+
+.first {
+    top: 250px;
+}
+
+.second {
+    top: 480px;
+}
+
+.icon-auth {
+    position: absolute;
+    right: 60px;
+    bottom: 170px;
+}
+
+.box video {
+    position: absolute;
+    width: 800px;
+    height: 100px;
+    bottom: 0px;
+    left: -86px;
+}
+
+.box .fall {
+    position: absolute;
+    bottom: 12px;
+    left: -125px;
+    width: 815px;
+
+}
+
+.vx {
+    position: absolute;
+    top: 35px;
+    right: 5px;
+    opacity: 0.6;
+    border-radius: 10px;
+}
+
+.Follow {
+    position: absolute;
+    top: 0;
+}
+
+.bigVx {
+    position: absolute;
+    top: 20px;
+    right: 120px;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, .5);
+    display: none;
+}
+
+.bigVx::before {
+    content: '';
+    position: absolute;
+    top: 80px;
+    right: 300px;
+    display: block;
+    width: 0px;
+    height: 0px;
+    line-height: 0;
+    font-size: 0;
+    border: 50px solid transparent;
+    border-right-color: rgba(255, 255, 255, .5);
+
+}
+
+.bigVx img {
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 20px;
+}

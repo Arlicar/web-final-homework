@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <title>温州美食</title>
+    <!-- 全屏滚动插件 -->
+    <link rel="stylesheet" href="./dist/css/fullpage.min.css">
+    <link rel="stylesheet" href="./css/foods.css">
+    <script src="./js/jQuery.min.js"></script>
+    <script src="./dist/js/jquery-ui.min.js"></script>
+    <script src="./dist/js/fullpage.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.fn.fullpage({
+                slidesColor: ['#FDF6E1', '#C2E5FF', '#FDF6E1', '#E9E9E9', '#F3F3F3'],
+                anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+                menu: '#menu',
+                afterRender: function () {
+                    $('.screen-main span').each(function () {
+                        var $rel = $(this).attr('rel');
+                        var $arr = $rel.split(',');
+                        $(this).animate({
+                            left: $arr[2] + 'px',
+                            top: $arr[3] + 'px'
+                        }, 500);
+                    });
+                    $('.inner a').each(function () {
+                        var $rel = $(this).attr('rel');
+                        var $arr = $rel.split(',');
+                        $(this).animate({
+                            left: $arr[0] + 'px',
+                            top: $arr[1] + 'px'
+                        }, 500);
+                    });
+                },
+                afterLoad: function (anchorLink, index) {
+                    if (index == 1) {
+                        $('.screen-main span').each(function () {
+                            var $rel = $(this).attr('rel');
+                            var $arr = $rel.split(',');
+                            $(this).animate({
+                                left: $arr[2] + 'px',
+                                top: $arr[3] + 'px'
+                            }, 500);
+                        });
+                    }
+                    if (index == 2 || index == 3 || index == 4 || index == 5) {
+                        $('.inner').eq(index - 2).find('a').each(function () {
+                            var $rel = $(this).attr('rel');
+                            var $arr = $rel.split(',');
+                            $(this).animate({
+                                left: $arr[2] + 'px',
+                                top: $arr[3] + 'px'
+                            }, 500);
+                        });
+                    }
+                    if (index == 6) {
+                        $('.zanzhu-con a').fadeIn(1000);
+                    }
+                },
+                onLeave: function (index, direction) {
+                    if (index == 1) {
+                        $('.screen-main span').each(function () {
+                            var $rel = $(this).attr('rel');
+                            var $arr = $rel.split(',');
+                            $(this).animate({
+                                left: $arr[0] + 'px',
+                                top: $arr[1] + 'px'
+                            }, 500);
+                        });
+                    }
+                    if (index == 2 || index == 3 || index == 4 || index == 5) {
+                        $('.inner').eq(index - 2).find('a').each(function () {
+                            var $rel = $(this).attr('rel');
+                            var $arr = $rel.split(',');
+                            $(this).animate({
+                                left: $arr[0] + 'px',
+                                top: $arr[1] + 'px'
+                            }, 500);
+                        });
+                    }
+                    if (index == 6) {
+                        $('.zanzhu-con a').fadeOut(1000);
+                    }
+                }
+            });
+        });
+    </script>
+    <!-- ----- -->
+    <link rel="stylesheet" href="./css/lunbotu.css">
+    <script src="./js/animate.js"></script>
+    <!-- ! 因为要引用animate封装函数，所以得放上面 -->
+    <script src="./js/lunbotu.js"></script>
+</head>
+
+<body>
+    <ul id="menu">
+        <li data-menuanchor="page1" class="active"><a href="#page1">TOP</a></li>
+        <li data-menuanchor="page2"><a href="#page2">鱼丸</a></li>
+        <li data-menuanchor="page3"><a href="#page3">粉干</a></li>
+        <li data-menuanchor="page4"><a href="#page4">鸭舌</a></li>
+        <li data-menuanchor="page5"><a href="#page5">鱼饼</a></li>
+        <li><a href="./index.html">返回</a></li>
+    </ul>
+
+    <div class="section section1">
+        <div class="screen-main">
+            <div class="topText">家乡的美食(请往下滑动观看)</div>
+
+            <div class="content">
+                <!--* 两个按钮 -->
+                <a href="javascript:;" class="arrow left">
+                    <</a> <a href="javascript:;" class="arrow right">>
+                </a>
+                <ul>
+                    <li>
+                        <a href="javascript:;"><img src="img/food1.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="img/food2.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="img/food3.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="img/food4.jpg" alt=""></a>
+                    </li>
+                </ul>
+                <!-- !下面的小圆点 -->
+                <ol>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="science-inner inner">
+            <a class="stiteml st1" href="javascript:void(0)" rel="0,-350,0,7">在温州</a>
+            <a class="stiteml st2" href="javascript:void(0)" rel="0,-350,0,37">鱼丸可是</a>
+            <a class="stiteml st3" href="javascript:void(0)" rel="0,-350,0,68">家喻户晓的</a>
+            <a class="stiteml st4" href="javascript:void(0)" rel="0,-350,0,88">美食</a>
+            <a class="stiteml st5" href="javascript:void(0)" rel="1010,116,554,116">被评定为中华小吃之一</a>
+            <a class="stiteml st6" href="javascript:void(0)" rel="1010,146,554,146">其汤色澄清</a>
+            <a class="stiteml st7" href="javascript:void(0)" rel="1010,163,554,163">微酸辣味</a>
+            <a class="stiteml st8" href="javascript:void(0)" rel="1010,236,554,236">味道鲜</a>
+            <a class="stitemr st9" href="javascript:void(0)" rel="-710,346,290,346">有韧劲</a>
+            <a class="stitemr st10" href="javascript:void(0)" rel="-710,376,290,376">料码足</a>
+            <a class="stitemr st11" href="javascript:void(0)" rel="-710,406,224,406">正宗的温州鱼丸是</a>
+            <a class="stitemr st12" href="javascript:void(0)" rel="-710,433,30,433">温州鱼丸永远滴神</a>
+            <a class="stiteml st13" href="javascript:void(0)" rel="761,1050,761,506">加米醋</a>
+            <a class="stiteml st14" href="javascript:void(0)" rel="761,1050,761,523">味精</a>
+            <a class="stiteml st15" href="javascript:void(0)" rel="761,1050,761,587">胡椒粉和葱花</a>
+            <a class="stiteml st16" href="javascript:void(0)" rel="761,1050,761,622">手指摘入沸水中</a>
+            <a class="stiteml st17" href="javascript:void(0)" rel="761,1050,761,656">上浮便熟</a>
+            <a class="stimg1" href="javascript:void(0)" rel="0,-350,0,153"><img width="181" height="126"
+                    src="img/eatFood2.gif"></a>
+            <a class="stimg2" href="javascript:void(0)" rel="980,2,220,2"><img width="313" height="250"
+                    src="img/eatFood.gif"></a>
+            <a class="stimg3" href="javascript:void(0)" rel="-407,350,413,350"><img width="313" height="215"
+                    src="img/food1.jpg"></a>
+            <a class="stimg4" href="javascript:void(0)" rel="761,850,761,350"><img width="200" height="138"
+                    src="img/eatFood3.gif"></a>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="famous-inner inner">
+            <a class="faitemr fa1" href="javascript:void(0)" rel="90,-180,90,68">炒粉干</a>
+            <a class="faitemr fa2" href="javascript:void(0)" rel="90,-180,90,93">遍布温州地区</a>
+            <a class="faitemr fa3" href="javascript:void(0)" rel="0,-180,0,113">各大街头小店和餐馆</a>
+            <a class="faiteml fa4" href="javascript:void(0)" rel="1280,203,235,203">加入用本地猪肉熬出的猪油炒制</a>
+            <a class="faiteml fa5" href="javascript:void(0)" rel="1280,227,235,227">温州炒粉干</a>
+            <a class="faiteml fa6" href="javascript:void(0)" rel="1080,290,235,290">再搭配</a>
+            <a class="faiteml fa7" href="javascript:void(0)" rel="-300,317,100,317,">佐料</a>
+            <a class="faiteml fa8" href="javascript:void(0)" rel="-300,533,149,533">丰富的配菜</a>
+            <a class="faiteml fa9" href="javascript:void(0)" rel="-300,563,149,563">有一股</a>
+            <a class="faiteml fa10" href="javascript:void(0)" rel="-300,593,149,593">特殊的香味</a>
+            <a class="faiteml fa11" href="javascript:void(0)" rel="1370,383,786,383">炒出后</a>
+            <a class="faiteml fa12" href="javascript:void(0)" rel="1370,450,786,450">色</a>
+            <a class="faiteml fa13" href="javascript:void(0)" rel="1370,480,786,480">香</a>
+            <a class="faiteml fa14" href="javascript:void(0)" rel="1370,510,786,510">味</a>
+            <a class="faiteml fa15" href="javascript:void(0)" rel="1370,540,786,540">俱全</a>
+            <a class="faimg2" href="javascript:void(0)" rel="980,77,600,77"><img width="284" height="211"
+                    src="img/eatFood4.gif"></a>
+            <a class="faimg3" href="javascript:void(0)" rel="980,366,290,366"><img width="491" height="328"
+                    src="img/food2.jpg"></a>
+            <a class="faimg4" href="javascript:void(0)" rel="-300,387,149,387"><img width="139" height="86"
+                    src="img/eatFood5.gif"></a>
+        </div>
+    </div>
+    <div class="section">
+        <div class="social-inner inner">
+            <a class="soiteml so1" href="javascript:void(0)" rel="450,-175,450,51">温州</a>
+            <a class="soiteml so2" href="javascript:void(0)" rel="450,-175,450,110">一道特备著名卤菜美食</a>
+            <a class="soiteml so3" href="javascript:void(0)" rel="450,-175,450,140">鸭舌风至半干</a>
+            <a class="soiteml so4" href="javascript:void(0)" rel="980,228,450,228">让人欲罢不能</a>
+            <a class="soiteml so5" href="javascript:void(0)" rel="980,258,450,258">韧性十足</a>
+            <a class="soiteml so6" href="javascript:void(0)" rel="980,288,450,288">在口中细嚼</a>
+            <a class="soiteml so7" href="javascript:void(0)" rel="980,340,450,340">颇为耐嚼</a>
+            <a class="soiteml so8" href="javascript:void(0)" rel="980,363,450,363">温州人称鸭舌为“鸭赚”，。</a>
+            <a class="soiteml so9" href="javascript:void(0)" rel="980,428,450,428">而不称鸭舌</a>
+            <a class="soiteml so10" href="javascript:void(0)" rel="-405,369,162,369">温州鸭舌</a>
+            <a class="soiteml so11" href="javascript:void(0)" rel="-405,434,162,434">温州话中舌发音和亏钱发音相近</a>
+            <a class="soiteml so12" href="javascript:void(0)" rel="-405,464,162,464">温州生意人多</a>
+            <a class="soitemr so13" href="javascript:void(0)" rel="15,850,15,520">觉得舌的发音不吉利</a>
+            <a class="soitemr so14" href="javascript:void(0)" rel="376,1050,376,585">所以把鸭舌</a>
+            <a class="soitemr so15" href="javascript:void(0)" rel="376,1050,357,612">改称为“鸭赚”</a>
+            <a class="soimg1" href="javascript:void(0)" rel="156,-175,156,10"><img width="270" height="160"
+                    src="img/food3.jpg"></a>
+            <a class="soimg2" href="javascript:void(0)" rel="-405,186,155,186"><img width="270" height="165"
+                    src="img/eatFood6.gif"></a>
+            <a class="soimg3" href="javascript:void(0)" rel="980,186,675,186"><img width="277" height="166"
+                    src="img/eatFood7.gif"></a>
+            <a class="soimg4" href="javascript:void(0)" rel="507,850,507,494"><img width="283" height="169"
+                    src="img/eatFood8.gif"></a>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="net-inner inner">
+            <a class="netiteml net7" href="javascript:void(0)" rel="980,-1,449,-1">可以用鮸鱼</a>
+            <a class="netiteml net8" href="javascript:void(0)" rel="980,28,449,28">也可以用其他</a>
+            <a class="netiteml net9" href="javascript:void(0)" rel="980,50,449,50">新鲜的海鱼</a>
+            <a class="netiteml net10" href="javascript:void(0)" rel="980,116,449,116">一斤鱼肉</a>
+            <a class="netiteml net11" a href="javascript:void(0)" rel="980,146,449,146">混合三两红薯淀粉</a>
+            <a class="netiteml net12" a href="javascript:void(0)" rel="980,184,449,184">我和小伙伴们都馋哭了</a>
+            <a class="netitemr net13" a href="javascript:void(0)" rel="-435,261,265,261">不多不少</a>
+            <a class="netitemr net14" a href="javascript:void(0)" rel="-435,291,103,291">温州鱼饼</a>
+            <a class="netitemr net15" a href="javascript:void(0)" rel="-435,351,8,351">既有鱼香</a>
+            <a class="netitemr net16" a href="javascript:void(0)" rel="-435,428,63,428">又足够</a>
+            <a class="netitemr net17" a href="javascript:void(0)" rel="-435,458,63,458">弹牙</a>
+            <a class="netiteml net18" a href="javascript:void(0)" style="left: 449px; top: 578px;"
+                rel="449,1140,449,578">肉质鲜嫩、鲜而不腥</a>
+            <a class="netiteml net19" a href="javascript:void(0)" style="left: 449px; top: 608px;"
+                rel="449,1140,449,608">低脂肪</a>
+            <a class="netiteml net20" a href="javascript:void(0)" style="left: 449px; top: 638px;"
+                rel="449,1140,449,638">营养丰富</a>
+            <a class="netimg1" a href="javascript:void(0)" rel="139,-240,139,57"><img width="289" height="178"
+                    src="img/food4.jpg"></a>
+            <a class="netimg2" a href="javascript:void(0)" rel="980,96,809,96"><img width="158" height="93"
+                    src="img/eatFood9.gif"></a>
+            <a class="netimg3" a href="javascript:void(0)" rel="-435,431,179,431"><img width="205" height="174"
+                    src="img/eatFood10.gif"></a>
+            <a class="netimg4" a href="javascript:void(0)" rel="451,850,451,267"><img width="400" height="291"
+                    src="img/eatFood11.gif"></a>
+        </div>
+    </div>
+</body>
+
+</html>
